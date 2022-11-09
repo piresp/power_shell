@@ -1,9 +1,10 @@
 # power_shell
 ## Fatec
 
+
 ### Operadores Lógicos
 
-```cs
+```ps1
 >     :   -gt  
 <     :   -lt  
 ==    :   -eq  
@@ -12,28 +13,41 @@
 <=    :   -le  
 ```
 
+
 ### Operadores Ternários
 
-```cs
+```ps1
 ||    :   -or  
 &&    :   -and  
 ```
 
+
+### Biblioteca - Math
+
+```ps1
+# Valor de pi
+$pi = [math]::PI
+
+# Potencia
+$pow = [math]::Pow($r, 2)
+```
+
+
 ### Comentario
 
-```cs
+```ps1
 #  ...  
 ```
 
 ### Input
 
-```cs
+```ps1
 Read-Host " mensagem para user"
 ```
 
 ### Output de Mensagem
 
-```cs
+```ps1
 write-Output " ... "  
 write-Output " ...: $numero "
 " $numero "
@@ -41,26 +55,26 @@ write-Output " ...: $numero "
 
 ### Declaração de Variavel
 
-```cs
+```ps1
 $var = 2  
 ```
 
 ### Limpar Cache
 
-```cs
+```ps1
 Clear-Host
 ```
 
-### Biblioteca de Objetos
+### Biblioteca - Objetos
 
-```cs
+```ps1
 $wshell = New-Object -com wscript.shell
 $wshell | Get-Member
 ```
 
 ### Acessando Objeto
 
-```cs
+```ps1
 # Abrindo calculadora
 
 $wshell = New-Object -com wscript.shell
@@ -72,7 +86,7 @@ $wshell.run("Notepad")
 
 ### Enviando Mensagem em Aplicativo Aberto
 
-```cs
+```ps1
 $wshell = New-Object -com wscript.shell
 
 # Abrindo Bloco de Notas e Selecionando-o #
@@ -86,7 +100,7 @@ $wshell.SendKeys("Interessante!")
 
 ### Definir Tipo da Variavel
 
-```cs
+```ps1
 [float]$numero1=Read-Host "Insira um float"
 [float]$numero2=Read-Host "Insira o segundo float"
 [float]$r = $numero1 + $numero2

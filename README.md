@@ -28,7 +28,7 @@
 ### Input
 
 ```cs
-Read-Host
+Read-Host " mensagem para user"
 ```
 
 ### Output de Mensagem
@@ -48,7 +48,7 @@ $var = 2
 ### Limpar Cache
 
 ```cs
-Clear-Host  
+Clear-Host
 ```
 
 ### Biblioteca de Objetos

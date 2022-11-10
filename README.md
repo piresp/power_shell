@@ -30,6 +30,9 @@ $pi = [math]::PI
 
 # Potencia
 $pow = [math]::Pow($r, 2)
+
+# Raiz Quadrada
+$raiz = [math]::sqrt(...)
 ```
 
 

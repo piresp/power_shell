@@ -1,3 +1,5 @@
+[float]$a = Read-Host " Insira o valor de A " 
+[float]$b = Read-Host " Insira o valor de B " 
 [float]$c = Read-Host " Insira o valor de C " 
 
 $delta = ( $b * $b ) - 4 * $a * $c
